@@ -64,6 +64,10 @@ h1{
   
 }
 
+.buscar input:focus {
+  outline: none;
+}
+
 .buscar img {
   margin: 0;
   height: .5em;
