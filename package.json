@@ -1,0 +1,11 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "Muestra la localización permidio de la IP",
+  "main": "./public/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhon Eduard Sierra Zuluaga",
+  "license": "ISC"
+}

@@ -1,0 +1,131 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+#map {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("../images/pattern-bg.png");
+  color: #fff;
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+}
+
+h1{
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+
+.buscar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  width: 100%;
+  height: 2.5em;
+}
+
+.contenedor__img {
+  background-color: #000;
+  height: 100%;
+  width: 10%;
+  border-radius: 0px 6px 6px 0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor__img:hover{
+  cursor: pointer;
+}
+
+.buscar input {
+  height: 100%;
+  width: 80%;
+  border-radius: 10px 0px 0 10px;
+  border: 0;
+  padding-left: 1.5em;
+}
+
+.buscar input::placeholder {
+  font-size: 13px;
+  
+}
+
+.buscar img {
+  margin: 0;
+  height: .5em;
+  width: .5em;
+}
+
+.informacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -4em;
+  left: 5%;
+  z-index: 3;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h3{
+  font-size: 9px;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+}
+
+span{
+  font-size: 1.5em;
+}
+
+@media (max-height: 800px) {
+  .informacion {
+    bottom: -10em;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  header{
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1000px){
+
+  .buscar{
+    width: 40%;
+  }
+
+  .informacion {
+    flex-direction: row;
+    bottom: -3em;
+    left: 15%;
+    justify-content: space-around;
+    width: 70vw;
+  }
+
+  .informacion div{
+    overflow: hidden;
+    font-size: 12px;
+  }
+}
